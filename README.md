@@ -1,8 +1,6 @@
 # case-study_bicycle
 
 ## Overview
-* brief description of case study (including overview of models)
-
 
 ## Supported Features
 
