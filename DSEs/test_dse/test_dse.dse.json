@@ -1,0 +1,38 @@
+{
+	"algorithm": {
+		"type": "exhaustive"
+	},
+	"objectiveConstraints": [],
+	"objectiveDefinitions": {
+		"externalScripts": {
+			"meanCrossTrackError": {
+				"scriptFile": "meanCrosstrackError.py",
+				"scriptParameters": {
+					"1": "{fmu2}.vehicle.x",
+					"2": "{fmu2}.vehicle.y"
+				}
+			},
+			"maxCrossTrackError": {
+				"scriptFile": "maxCrosstrackError.py",
+				"scriptParameters": {
+					"1": "{fmu2}.vehicle.x",
+					"2": "{fmu2}.vehicle.y"
+				}
+			}
+		},
+		"internalFunctions": {}
+	},
+	"parameterConstraints": [],
+	"parameters": {
+		"{fmu1}.Steering_control.speed_ref": [0.5, 1.0],
+		"{fmu1}.Steering_control.control_parameter": [0.5, 0.75, 1.0],
+		"{fmu1}.Steering_control.look_ahead_dist": [0.5, 0.75, 1.0]
+	},
+	"ranking": {
+		"pareto": {
+			"meanCrossTrackError": "-",
+			"maxCrossTrackError": "-"
+		}
+	},
+	"scenarios": ["studentMap"]
+}

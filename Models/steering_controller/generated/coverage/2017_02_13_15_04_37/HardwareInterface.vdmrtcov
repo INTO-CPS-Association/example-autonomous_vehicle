@@ -1,0 +1,32 @@
+--##	EXPORT	50e73736cf69ef30c567392a768c279aa41f22da	steering_controller.fmu	2017-03-02 12:21:11	tool-wrapper	{"name":"fmu-import-export","version":"0.1.7-SNAPSHOT"}
+--##	EXPORT	45794815f80337eb5d12519aca263c33c5cfadb7	steering_controller.fmu	2017-03-02 12:20:16	tool-wrapper	{"name":"fmu-import-export","version":"0.1.6"}
+class HardwareInterface
+values
+ 		-- @ interface: type = parameter, name="speed_ref";
+    public speed_ref : RealPort = new RealPort(1.8);
+    -- @ interface: type = parameter, name="control_parameter";
+    public control_parameter : RealPort = new RealPort(1.5);
+    -- @ interface: type = parameter, name="look_ahead_dist";
+    public look_ahead_dist : RealPort = new RealPort(0.4);
+    
+instance variables
+    -- @ interface: type = input, name="pos_x";
+    public pos_x : RealPort := new RealPort(0.0);
+    -- @ interface: type = input, name="pos_y";
+    public pos_y : RealPort := new RealPort(0.0);
+    -- @ interface: type = input, name="pos_theta";
+    public pos_theta : RealPort := new RealPort(0.0);
+    
+    -- vehicle speed
+    -- @ interface: type = input, name="w_r";
+    public w_r : RealPort := new RealPort(0.0);
+    -- steering wheel angle
+    -- @ interface: type = input, name="d_f";
+    public d_f : RealPort := new RealPort(0.0);
+ 
+    -- @ interface: type = output, name="speed";
+    public speed : RealPort := new RealPort(1.0);
+    -- @ interface: type = output, name="delta_f";
+    public delta_f : RealPort := new RealPort(0.0);
+    
+end HardwareInterface
