@@ -1,1 +1,0 @@
-{"startTime":0,"endTime":40,"multimodel_path":"Multi-models/basic-sim/mm.json","livestream":{"{fmu1}.Steering_control":["speed","delta_f"]},"visible":false,"loggingOn":false,"overrideLogLevel":"ERROR","enableAllLogCategoriesPerInstance":false,"algorithm":{"type":"fixed-step","size":0.001}}
