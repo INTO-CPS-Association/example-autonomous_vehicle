@@ -1,0 +1,38 @@
+{
+    "algorithm": {
+        "size": 0.1,
+        "type": "fixed-step"
+    },
+    "connections": {
+        "{fmu1}.Steering_control.delta_f": [
+            "{fmu2}.vehicle.delta_w"
+        ],
+        "{fmu1}.Steering_control.speed": [
+            "{fmu2}.vehicle.u_r"
+        ],
+        "{fmu2}.vehicle.delta_f": [
+            "{fmu1}.Steering_control.d_f"
+        ],
+        "{fmu2}.vehicle.theta": [
+            "{fmu1}.Steering_control.pos_theta"
+        ],
+        "{fmu2}.vehicle.w_o": [
+            "{fmu1}.Steering_control.w_r"
+        ],
+        "{fmu2}.vehicle.x": [
+            "{fmu1}.Steering_control.pos_x"
+        ],
+        "{fmu2}.vehicle.y": [
+            "{fmu1}.Steering_control.pos_y"
+        ]
+    },
+    "fmus": {
+        "{fmu1}": "file:///C:/Users/Frederik/Desktop/bicyclemodel/FMUs/steering_controller.fmu",
+        "{fmu2}": "file:///C:/Users/Frederik/Desktop/bicyclemodel/FMUs/vehicle.fmu"
+    },
+    "parameters": {
+        "{fmu1}.Steering_control.control_parameter": 0.75,
+        "{fmu1}.Steering_control.look_ahead_dist": 1.0,
+        "{fmu1}.Steering_control.speed_ref": 1.0
+    }
+}

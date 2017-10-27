@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.overture.ide.vdmrt.debug.launchConfigurationType">
+<booleanAttribute key="vdm_launch_config_create_coverage" value="true"/>
+<stringAttribute key="vdm_launch_config_default" value="ControlParameters"/>
+<booleanAttribute key="vdm_launch_config_enable_logging" value="false"/>
+<stringAttribute key="vdm_launch_config_expression" value="new ControlParameters().GetL()"/>
+<stringAttribute key="vdm_launch_config_method" value="GetL()"/>
+<stringAttribute key="vdm_launch_config_module" value="ControlParameters()"/>
+<stringAttribute key="vdm_launch_config_project" value="steering_controller"/>
+<booleanAttribute key="vdm_launch_config_static_method" value="false"/>
+</launchConfiguration>
