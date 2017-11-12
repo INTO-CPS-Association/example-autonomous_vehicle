@@ -16,4 +16,4 @@ This study supports the following INTO-CPS technologies:
 * Design Space Exploration
 
 ## Additional Information
-For additional information contact the case study owner, [Frederik Foldager](mailto:ffo@agrointelli.com)
+For additional information contact the case study owner, [Frederik Foldager](mailto:ffo@agrointelli.com).
